@@ -22,6 +22,24 @@
 * **cicd:** only treat a real YAML comment as an inline ignore for D340 and for shell-command findings on a one-line `run:`, so a marker inside a quoted step value no longer hides a publish or exfiltration finding.
 * **cicd:** locate each shell-command finding inside its own `run:` value, so repeating the command next to an ignore marker elsewhere in the workflow no longer hides it and identical steps are each reported.
 
+## [5.9.0](https://github.com/duriantaco/skylos/compare/v5.8.0...v5.9.0) (2026-11-25)
+
+
+### Features
+
+* **cli:** make skylos lint run native architecture checks ([#1299](https://github.com/duriantaco/skylos/issues/1299)) ([5ae59a2](https://github.com/duriantaco/skylos/commit/5ae59a2a20c72142e6ea555014c9712ba9685da8))
+* **done:** expose pytest regression replay ([#1293](https://github.com/duriantaco/skylos/issues/1293)) ([6d59947](https://github.com/duriantaco/skylos/commit/6d5994766464d7a0a313d97deec49396ca030e35))
+* **secrets:** scan more files and git history ([#1291](https://github.com/duriantaco/skylos/issues/1291)) ([06e8d2a](https://github.com/duriantaco/skylos/commit/06e8d2ac34f8a2bacf141166e0907854c7dd8f64))
+* **security:** trace configured RSA key sizes through Django models ([#1298](https://github.com/duriantaco/skylos/issues/1298)) ([6d8253f](https://github.com/duriantaco/skylos/commit/6d8253fa6ec2c6a1ae4b5bef4862621f0030737e))
+
+
+### Bug Fixes
+
+* **deadcode:** prove SvelteKit entry points ([#1297](https://github.com/duriantaco/skylos/issues/1297)) ([ee4b4de](https://github.com/duriantaco/skylos/commit/ee4b4de389531a223a6c356833bf1ce5fc66bf31))
+* **deadcode:** resolve Vite globs and scope Next export roots ([#1296](https://github.com/duriantaco/skylos/issues/1296)) ([718dd39](https://github.com/duriantaco/skylos/commit/718dd39fdd5a8794deb8494f62bb99f94d8d0432))
+* **release:** harden Skylos supply chain ([#1294](https://github.com/duriantaco/skylos/issues/1294)) ([00140f8](https://github.com/duriantaco/skylos/commit/00140f8b01f10b7630ad76cb3d8a4714c1878a77))
+* **security:** trace SQL through registered SQLite workers ([#1295](https://github.com/duriantaco/skylos/issues/1295)) ([4705cac](https://github.com/duriantaco/skylos/commit/4705cace7b6de77519340e327b637f6d54220e48))
+
 ## [5.8.0](https://github.com/duriantaco/skylos/compare/v5.7.0...v5.8.0) (2026-11-23)
 
 
